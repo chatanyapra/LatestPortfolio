@@ -1,0 +1,60 @@
+:root {
+  --primary-color: #070a29;
+  --secondary-color: #070a29;
+  --shape-circle: radial-gradient(34.98% 34.98% at 50% 50%, #725bda 0, rgba(6, 19, 45, 0) 100%);
+}
+.bouncing-balls-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.ball-moving {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  position: absolute;
+  background: radial-gradient(circle at 50% 120%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);
+}
+
+.ball-moving:before {
+  content: "";
+  position: absolute;
+  top: 1%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 0px, #ffffff, rgba(255, 255, 255, 0) 58%);
+  filter: blur(5px);
+  z-index: 2;
+}
+
+.ball .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+  transform: rotateX(90deg) translateZ(-150px);
+  z-index: -1;
+}
+  
+  /* Different ball colors */
+  .ball-1 {
+    background: radial-gradient(circle at 30% 30%, #286eb9, #286eb974);
+  }
+  
+  .ball-2 {
+    background: radial-gradient(circle at 30% 30%, #5c27fe, #5d27fe6d);
+  }
+  
+  .ball-3 {
+    background: radial-gradient(circle at 30% 30%, #41296e, #41296e65);
+  }
+  .glass-effect {
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(30.5px);
+    -webkit-backdrop-filter: blur(30.5px);
+  }
+  

@@ -1,0 +1,29 @@
+:root {
+    --primary-color: #070a29;
+    --secondary-color: #070a29;
+    --shape-circle: radial-gradient(34.98% 34.98% at 50% 50%, #725bda 0, rgba(6, 19, 45, 0) 100%);
+}
+
+.main-color {
+    background-color: var(--primary-color);
+}
+
+@keyframes navbar-anim {
+    from {
+        opacity: 0;
+        background-color: transparent;
+    }
+    to {
+        opacity: 1;
+        background-color: #070a29;
+        box-shadow: 0 2px 4px #06071c;
+    }
+}
+
+.navbar-animation {
+    transition: all;
+    position: fixed;
+    animation-name: navbar-anim;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}

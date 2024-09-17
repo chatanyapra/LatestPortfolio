@@ -1,0 +1,29 @@
+
+  .bouncing-balls-container {
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .ball {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.6), inset 0 0 20px rgba(255, 255, 255, 0.4);
+  }
+  
+  /* Different ball colors */
+  .ball-1 {
+    background: radial-gradient(circle at 30% 30%, red, darkred);
+  }
+  
+  .ball-2 {
+    background: radial-gradient(circle at 30% 30%, blue, darkblue);
+  }
+  
+  .ball-3 {
+    background: radial-gradient(circle at 30% 30%, green, darkgreen);
+  }
+  
