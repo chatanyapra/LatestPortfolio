@@ -5,25 +5,32 @@
 }
 
 .main-color {
-    background-color: var(--primary-color);
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: saturate(200%) blur(30.5px);
 }
 
 @keyframes navbar-anim {
     from {
         opacity: 0;
-        background-color: transparent;
+        /* background-color: transparent; */
     }
     to {
         opacity: 1;
-        background-color: #070a29;
-        box-shadow: 0 2px 4px #06071c;
     }
 }
 
 .navbar-animation {
     transition: all;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(30.5px);
     position: fixed;
     animation-name: navbar-anim;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
+}
+.no-scroll {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
 }

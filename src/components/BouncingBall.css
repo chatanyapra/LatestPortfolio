@@ -1,21 +1,19 @@
-:root {
-  --primary-color: #070a29;
-  --secondary-color: #070a29;
-  --shape-circle: radial-gradient(34.98% 34.98% at 50% 50%, #725bda 0, rgba(6, 19, 45, 0) 100%);
-}
 .bouncing-balls-container {
-  position: relative;
   width: 100%;
   height: 100vh;
+  /* background-color: azure; */
 }
 
 .ball-moving {
   display: inline-block;
-  width: 250px;
-  height: 250px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   position: absolute;
-  background: radial-gradient(circle at 50% 120%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);
+  background: radial-gradient(circle at 50% 120%, rgba(129, 232, 246, 0.6), rgba(118, 222, 239, 0.4) 10%, rgba(5, 81, 148, 0.3) 80%, rgba(6, 39, 69, 0.3) 100%);
+  backdrop-filter: blur(10px); /* Blur effect for the glass look */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for glass edges */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1), 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft light shadow */
 }
 
 .ball-moving:before {
@@ -26,8 +24,8 @@
   width: 90%;
   height: 90%;
   border-radius: 50%;
-  background: radial-gradient(circle at 50% 0px, #ffffff, rgba(255, 255, 255, 0) 58%);
-  filter: blur(5px);
+  background: radial-gradient(circle at 50% 0px, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 58%);
+  filter: blur(8px); /* Enhanced blur for more glass-like reflection */
   z-index: 2;
 }
 
@@ -39,22 +37,35 @@
   transform: rotateX(90deg) translateZ(-150px);
   z-index: -1;
 }
-  
-  /* Different ball colors */
-  .ball-1 {
-    background: radial-gradient(circle at 30% 30%, #286eb9, #286eb974);
-  }
-  
-  .ball-2 {
-    background: radial-gradient(circle at 30% 30%, #5c27fe, #5d27fe6d);
-  }
-  
-  .ball-3 {
-    background: radial-gradient(circle at 30% 30%, #41296e, #41296e65);
-  }
-  .glass-effect {
-    background: rgba(255, 255, 255, 0);
-    backdrop-filter: blur(30.5px);
-    -webkit-backdrop-filter: blur(30.5px);
-  }
-  
+.ball-1 {
+  background: radial-gradient(circle at 30% 30%, rgba(161, 34, 181, 0.5), rgba(161, 34, 181, 0));
+}
+
+.ball-2 {
+  background: radial-gradient(circle at 30% 30%, rgba(92, 39, 254, 0.6), rgba(93, 39, 254, 0.3));
+}
+
+.ball-3 {
+  background: radial-gradient(circle at 30% 30%, rgba(41, 110, 41, 0.5), rgba(41, 110, 41, 0.3));
+}
+
+.ball-4 {
+  background: radial-gradient(circle at 30% 30%, rgba(140, 17, 113, 0.6), rgba(140, 17, 113, 0.3));
+}
+
+.ball-5 {
+  background: radial-gradient(circle at 30% 30%, rgba(184, 26, 26, 0.6), rgba(184, 26, 26, 0.3));
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: saturate(200%) blur(30.5px);
+  -webkit-backdrop-filter: blur(30.5px);
+}
+
+.text-gradient {
+  background: #A050AA;
+  background: linear-gradient(to bottom, #a34bae 12%, #3DB7DC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

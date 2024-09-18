@@ -3,12 +3,30 @@
   --secondary-color: #070a29;
   --shape-circle: radial-gradient(34.98% 34.98% at 50% 50%, #725bda 0, rgba(6, 19, 45, 0) 100%);
 }
+@font-face {
+  font-family: 'CustomFont';
+  src: url('./assets/conthrax-sb.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body{
   margin: 0;
   padding: 0;
-  background-color: var(--primary-color);
+  background-color: var(--primary-color);  
   min-height: 1500px;
+  font-family: 'CustomFont', sans-serif;
 }
 .navbar-color{
   background-color: var(--primary-color);
+}
+
+.app-main::after{
+  content: "";
+  position: absolute;
+  top: -120px;
+  right: -25%;
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(34.98% 34.98% at 50% 50%, #725bda6c 0, rgba(6, 19, 45, 0) 100%);
 }

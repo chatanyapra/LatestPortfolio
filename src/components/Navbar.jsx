@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { logo } from "../utils/imagesGallery"
-import "./Navbar.css"
+import { logo } from "../utils/imagesGallery";
+import "./Navbar.css";
 
 const Navbar = () => {
     const [isSidebarOpen, setSidebarOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
-    const [isNavButtonChanged, setNavButtonChanged] = useState(false);
     const sidebarRef = useRef(null);
     const navbarRef = useRef(null);
 
@@ -22,10 +21,10 @@ const Navbar = () => {
     useEffect(() => {
         const handleScroll = () => {
             const position = window.scrollY;
-            if (position >= 120) {
-                setIsScrolled(true); // Add class when scrolled beyond 100px
+            if (position >= 50) {
+                setIsScrolled(true);
             } else {
-                setIsScrolled(false); // Remove class when scrolled above 100px
+                setIsScrolled(false);
             }
         };
 
@@ -36,21 +35,23 @@ const Navbar = () => {
         };
     }, []);
 
-    // Add or remove event listener for sidebar click outside
     useEffect(() => {
         if (isSidebarOpen) {
+            document.body.classList.add('no-scroll');
             document.addEventListener('mousedown', handleClickOutside);
         } else {
+            document.body.classList.remove('no-scroll');
             document.removeEventListener('mousedown', handleClickOutside);
         }
 
         return () => {
+            document.body.classList.remove('no-scroll');
             document.removeEventListener('mousedown', handleClickOutside);
         };
     }, [isSidebarOpen]);
-    
+
     return (
-        <nav ref={navbarRef} className={`top-0 left-0 w-full p-3 main-color transition-opacity duration-300 ease-out z-20 ${isScrolled ? 'navbar-animation' : ''}`} >
+        <nav ref={navbarRef} className={`fixed top-0 left-0 w-full p-3 main-color transition-opacity duration-300 ease-out z-20 ${isScrolled ? 'navbar-animation' : ''}`}>
             <div className="container flex flex-wrap justify-between items-center mx-auto">
                 <a href="#" className="flex items-center">
                     <img src={logo} className='h-14' alt="" />
@@ -105,8 +106,7 @@ const Navbar = () => {
 
             {/* Sidebar for small screens */}
             <div
-                className={`fixed inset-0 transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
-                    } transition-transform duration-300 ease-in-out bg-gray-50 bg-opacity-50`}
+                className={`fixed inset-0 transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out bg-gray-50 bg-opacity-50 h-screen overflow-hidden`}
             >
                 <div
                     ref={sidebarRef}
