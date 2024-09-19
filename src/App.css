@@ -30,3 +30,12 @@ body{
   height: 1000px;
   background: radial-gradient(34.98% 34.98% at 50% 50%, #725bda6c 0, rgba(6, 19, 45, 0) 100%);
 }
+.app-main::before{
+  content: "";
+  position: absolute;
+  top: 650px;
+  left: -20%;
+  width: 900px;
+  height: 1000px;
+  background: radial-gradient(34.98% 34.98% at 50% 50%, #725bda6c 0, rgba(6, 19, 45, 0) 100%);
+}

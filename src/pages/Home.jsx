@@ -10,7 +10,7 @@ import { FaLinkedinIn, FaGithub, FaInstagram  } from "react-icons/fa6";
 const Home = () => {
   const words = [" Developer", " Full-Stack Coder", " Problem Solver", " Creative Thinker"];
   return (
-    <div className='w-full h-full relative'>
+    <div className='w-full h-full relative mt-24 max-md:mb-24'>
       <BouncingBall />
       <div className="flex max-md:flex-col justify-evenly w-full min-h-96 p-4 md:mt-14 absolute top-0 z-10">
         <div className="w-2/4 max-md:w-full h-full max-md:mb-14 text-gray-50 md:ml-16">
@@ -34,10 +34,10 @@ const Home = () => {
             <FaInstagram className='text-white m-1.5'/>
           </div>
         </div>
-        <div className="w-2/4 max-md:w-full h-full relative">
+        <div className="w-2/4 max-md:w-full h-full ">
           <div className="relative">
-            <div className="w-96 m-auto home-image" style={{ borderRadius: "100px", height: "500px" }}></div>
-            <div className="w-96 bg-gray-400 m-auto absolute top-0 overflow-hidden" style={{ borderRadius: "100px", height: "500px", left: "calc(50% - 192px)" }}>
+            <div className="w-96 m-auto home-image max-sm:scale-90" style={{ borderRadius: "100px", height: "500px" }}></div>
+            <div className="w-96 bg-gray-400 m-auto absolute top-0 overflow-hidden max-sm:scale-75" style={{ borderRadius: "100px", height: "500px", left: "calc(50% - 192px)" }}>
               <img src={HomeImage} className="w-full h-full" style={{ objectFit: "cover" }} alt="" />
             </div>
             <img src={Iconimage} className="moving-img-2 rounded-full" alt="" />
@@ -47,7 +47,7 @@ const Home = () => {
                 <span className="font-bold">Chatanya Pratap</span>
                 <small className="-mt-1 font-extralight text-gray-500">chatanya@</small>
               </div>
-            </div>
+             </div>
           </div>
         </div>
       </div>
