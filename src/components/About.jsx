@@ -4,7 +4,7 @@ import "./About.css"
 
 const About = () => {
   return (
-    <div className='w-full h-auto relative top z-10 about-main max-md:mt-52'>
+    <div className='w-full h-auto relative top-0 z-10 about-main max-md:mt-52'>
         <img src={lineCurve} className='w-full h-full absolute top-0 left-0' alt="" />
         <div className='w-full flex max-md:flex-col-reverse relative'>
             <div className='md:w-2/4 min-h-96 about2-img max-sm:scale-75 float-start'>

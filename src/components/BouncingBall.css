@@ -1,6 +1,7 @@
 .bouncing-balls-container {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 1000px;
   /* background-color: azure; */
 }
 
@@ -68,4 +69,11 @@
   background: linear-gradient(to bottom, #a34bae 12%, #3DB7DC 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (min-width: 600px) {
+  .bouncing-balls-container {
+    width: 100%;
+    height: 700px;
+  }
 }

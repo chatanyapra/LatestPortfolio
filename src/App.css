@@ -14,7 +14,7 @@ body{
   margin: 0;
   padding: 0;
   background-color: var(--primary-color);  
-  min-height: 1500px;
+  /* min-height: 1500px; */
   font-family: 'CustomFont', sans-serif;
 }
 .navbar-color{
