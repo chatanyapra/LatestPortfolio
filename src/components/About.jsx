@@ -1,13 +1,31 @@
-import React from 'react'
 import lineCurve from "../assets/images/linecurve1.png"
+import React, { useEffect, useRef } from "react";
 import "./About.css"
+import { gsap } from "gsap";
 
 const About = () => {
+  const boxRef = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      boxRef.current,
+      { x: "-100vw" },
+      { x: "0vw", duration: 1.5, ease: "power3.out" }
+    );
+    const parentDiv = document.querySelector('.about2-img');
+    parentDiv.style.setProperty('--scale', 0);
+    gsap.to(parentDiv, {
+      duration: 2,
+      delay: 0.8,
+      ease: "power3.out",
+      '--scale': 1,
+    });
+  }, []);
   return (
     <div className='w-full h-auto relative top-0 z-10 about-main max-md:mt-52'>
         <img src={lineCurve} className='w-full h-full absolute top-0 left-0' alt="" />
         <div className='w-full flex max-md:flex-col-reverse relative'>
-            <div className='md:w-2/4 min-h-96 about2-img max-sm:scale-75 float-start'>
+            <div  ref={boxRef} className='md:w-2/4 min-h-96 about2-img max-sm:scale-75 float-start'>
                 <div className="w-96 m-auto about-image" style={{ borderRadius: "100px"}}></div>
             </div>
             <div className='md:w-2/4 min-h-96 mt-14 pr-10 max-md:px-4 text-white'>

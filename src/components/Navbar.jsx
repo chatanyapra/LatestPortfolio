@@ -1,12 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { logo } from "../utils/imagesGallery";
 import "./Navbar.css";
+import { gsap } from "gsap";
 
 const Navbar = () => {
     const [isSidebarOpen, setSidebarOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const sidebarRef = useRef(null);
     const navbarRef = useRef(null);
+    const logoAnim = useRef(null);
 
     const toggleSidebar = () => {
         setSidebarOpen(!isSidebarOpen);
@@ -19,6 +21,11 @@ const Navbar = () => {
     };
 
     useEffect(() => {
+        gsap.fromTo(
+            logoAnim.current,
+            { y: "-100vw" },
+            { y: "0vw", duration: 1.5, delay: 0.5, ease: "power3.out" }
+        )
         const handleScroll = () => {
             const position = window.scrollY;
             if (position >= 50) {
@@ -53,7 +60,7 @@ const Navbar = () => {
     return (
         <nav ref={navbarRef} className={`fixed top-0 left-0 w-full p-3 main-color transition-opacity duration-300 ease-out z-20 ${isScrolled ? 'navbar-animation' : ''}`}>
             <div className="container flex flex-wrap justify-between items-center mx-auto">
-                <a href="#" className="flex items-center">
+                <a ref={logoAnim} href="#" className="flex items-center">
                     <img src={logo} className='h-14' alt="" />
                 </a>
                 <div className="flex md:hidden">

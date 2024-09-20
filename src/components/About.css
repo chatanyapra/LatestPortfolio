@@ -63,7 +63,7 @@
     position: absolute;
     width: 140px;
     height: 160px;
-    left: 420px;
+    left: 400px;
     bottom: 50px;
     background: hsla(0, 0%, 100%, 0.1);
     background-image: url('../assets/images/item-05.a9739045efd748aca967.png');
@@ -71,8 +71,9 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-radius: 30px;
+    transform: scale(var(--scale, 1));
     z-index: 1;
-    animation: moving-amin-person 4s linear 2s infinite alternate;
+    animation: moving-amin-person 2s linear 2s infinite alternate;
 }
 @keyframes moving-amin-fly {
     from {
@@ -93,10 +94,10 @@
   }
 @keyframes moving-amin-person {
     from {
-        bottom: 50px;
+        transform: scale(1);
     }
     to {
-        bottom: 100px;
+        transform: scale(0.8);
     }
   }
 @media only screen and (max-width: 600px) {

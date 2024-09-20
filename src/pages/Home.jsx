@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from "react";
 import BouncingBall from '../components/BouncingBall'
 import "./Home.css"
 import HomeImage from "../assets/images/frontlook boy.png";
@@ -6,9 +6,38 @@ import Iconimage from "../assets/images/img-case.png";
 import myImage from "../assets/personsImages/profile-pic.png";
 import TypewriterEffect from '../components/Typewriter';
 import { FaLinkedinIn, FaGithub, FaInstagram  } from "react-icons/fa6";
+import { gsap } from "gsap";
 
 const Home = () => {
   const words = [" Developer", " Full-Stack Coder", " Problem Solver", " Creative Thinker"];
+  const userimage = useRef(null);
+  const homeimage = useRef(null);
+  const textRef = useRef(null);
+  useEffect(() => {
+    gsap.fromTo(
+      homeimage.current,
+      { x: "-100vw" },
+      { 
+        x: "0vw",
+        delay: 1,
+        duration: 1.5, 
+        ease: "power3.out",
+        onComplete: () => {
+          gsap.to(homeimage.current, {
+            x: "-20px",
+            duration: 0.3,
+            ease: "power2.out",
+            yoyo: true,
+          });
+        }
+      }
+    );
+    gsap.fromTo(
+      userimage.current, 
+      { scale: 0 },
+      { scale: 1, duration: 1.5, delay: 0.5, ease: 'power3.out' }
+    );
+  }, []);
   return (
     <div className='w-full h-full relative mt-24 max-md:mb-24'>
       <BouncingBall />
@@ -26,7 +55,7 @@ const Home = () => {
             </span>
             <p>I create seamless, high-performance websites where every line of code serves a purpose—combining functionality with user-friendly experiences.</p>
           </div>
-          <div className='my-14 text-3xl flex'>
+          <div ref={homeimage} className='my-14 text-3xl flex'>
             <FaLinkedinIn className='text-white m-1.5'/>
             <span className='btn-gradient w-14 mt-5 mx-2'></span>
             <FaGithub className='text-white m-1.5'/>
@@ -41,7 +70,7 @@ const Home = () => {
               <img src={HomeImage} className="w-full h-full" style={{ objectFit: "cover" }} alt="" />
             </div>
             <img src={Iconimage} className="moving-img-2 rounded-full" alt="" />
-            <div className="moving-img bg-gray-200 flex py-3 px-4 rounded-2xl">
+            <div ref={userimage} className="moving-img bg-gray-200 flex py-3 px-4 rounded-2xl h-20">
               <img src={myImage} className="w-14 h-14 rounded-full" style={{ boxShadow: "0 16px 36px rgba(0, 0, 0, .25)" }} alt="" />
               <div className="pl-3 pt-2 flex flex-col">
                 <span className="font-bold">Chatanya Pratap</span>
