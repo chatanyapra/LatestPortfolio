@@ -7,11 +7,13 @@ function App() {
 
   return (
     <div className='h-auto w-full relative app-main overflow-hidden flex flex-col items-center'>
-      <div className='w-full ' style={{minHeight:"2500px", maxWidth: "1500px"}}>
+      <div className='w-full ' style={{minHeight:"2100px", maxWidth: "1500px"}}>
         <div className="absolute top-0 left-0 bottom-0 right-0 glass-effect p-5 mt-20 text-center" style={{zIndex: "2"}}></div>
         <Navbar/>
-        <Home/>
-        <About/>
+        <div className='relative flex flex-col justify-between'>
+          <Home/>
+          <About/>
+        </div>
       </div>
     </div>
   )

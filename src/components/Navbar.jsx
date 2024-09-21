@@ -108,20 +108,9 @@ const Navbar = () => {
                     >
                         Contact
                     </a>
-                </div>
-            </div>
-
-            {/* Sidebar for small screens */}
-            <div
-                className={`fixed inset-0 transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out bg-gray-50 bg-opacity-50 h-screen overflow-hidden`}
-            >
-                <div
-                    ref={sidebarRef}
-                    className="absolute left-0 top-0 w-64 bg-white h-full shadow-md"
-                >
-                    <button
-                        onClick={toggleSidebar}
-                        className="absolute top-4 right-4 text-gray-500 focus:outline-none"
+                    <a
+                        href="#"
+                        className="text-gray-200 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium"
                     >
                         <svg
                             className="w-6 h-6"
@@ -134,36 +123,10 @@ const Navbar = () => {
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
                                 strokeWidth="2"
-                                d="M6 18L18 6M6 6l12 12"
+                                d="M4 6h16M4 12h16m-7 6h7"
                             ></path>
                         </svg>
-                    </button>
-                    <ul className="mt-12 space-y-4">
-                        <li>
-                            <a
-                                href="#"
-                                className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
-                            >
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#"
-                                className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
-                            >
-                                About
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#"
-                                className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded"
-                            >
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
+                    </a>
                 </div>
             </div>
         </nav>

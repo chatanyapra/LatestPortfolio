@@ -71,6 +71,90 @@
   -webkit-text-fill-color: transparent;
 }
 
+.text-main-card {
+  background-color: var(--bg-color);
+  border-radius: 1.25rem;
+}
+.loader-text-home {
+  font-weight: 500;
+  font-size: 25px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 8px;
+}
+
+.words {
+  overflow: hidden;
+  position: relative;
+}
+.words::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.word {
+  display: block;
+  height: 100%;
+  font-weight: bolder;
+  text-wrap: nowrap;
+  padding-left: 6px;
+  animation: spin_4991 8s 5s infinite;
+}
+
+.text-gradient {
+  background: #a050aa;
+  background: linear-gradient(to bottom, #a34bae 12%, #3db7dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes spin_4991 {
+  12.5% {
+    -webkit-transform: translateY(-104%);
+    transform: translateY(-104%);
+  }
+
+  25% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  37.5% {
+    -webkit-transform: translateY(-202%);
+    transform: translateY(-202%);
+  }
+
+  50% {
+    -webkit-transform: translateY(-200%);
+    transform: translateY(-200%);
+  }
+
+  62.5% {
+    -webkit-transform: translateY(-302%);
+    transform: translateY(-302%);
+  }
+
+  75% {
+    -webkit-transform: translateY(-300%);
+    transform: translateY(-300%);
+  }
+
+  87.5% {
+    -webkit-transform: translateY(-402%);
+    transform: translateY(-402%);
+  }
+
+  100% {
+    -webkit-transform: translateY(-400%);
+    transform: translateY(-400%);
+  }
+}
+
+
 @media only screen and (min-width: 600px) {
   .bouncing-balls-container {
     width: 100%;
