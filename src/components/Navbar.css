@@ -11,12 +11,12 @@
 .icon-shadow {
     color: white;
     filter: drop-shadow(0 0 0.75rem #070a29);
+    cursor: pointer;
 }
 .navbar-animation {
     transition: all;
     background: rgba(255, 255, 255, 0);
     backdrop-filter: blur(30.5px);
-    position: fixed;
     animation-name: navbar-anim;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;

@@ -43,7 +43,7 @@ const About = () => {
                 <div className="w-96 m-auto about-image" style={{ borderRadius: "100px"}}></div>
             </div>
             <div className='md:w-2/4 min-h-96 mt-14 pr-10 max-md:px-4 text-white'>
-                <h1 className='transparent-color px-4 py-1 text-2xl rounded-2xl w-fit mb-4 text-gradient'><i>About</i> </h1>
+                <h1 className='transparent-color px-4 py-1 text-4xl rounded-2xl w-fit mb-4 text-gradient'><i>About</i> </h1>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, iste magnam. Explicabo dignissimos dolores, 
                 temporibus laboriosam aperiam eum. Voluptatum consequuntur ducimus, odit quo blanditiis debitis, dolorem illum nulla consectetur atque dolorum eos harum
                  eum! Ea quia quidem dolor rerum distinctio laudantium, minima atque tenetur quaerat ad, id aperiam consequuntur optio vero dolore rem eius magni? Consequatur qui, eius eligendi aperiam doloribus repellat nam 

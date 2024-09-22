@@ -39,7 +39,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav ref={navbarRef} className={`fixed flex flex-col top-0 left-0 w-full p-3 main-color transition-opacity duration-300 ease-out z-20 ${isScrolled ? 'navbar-animation' : ''}`}>
+            <nav ref={navbarRef} className={`relative md:fixed flex flex-col top-0 left-0 w-full p-3 main-color transition-opacity duration-300 ease-out z-20 ${isScrolled ? 'navbar-animation' : ''}`}>
                 <div className="container flex flex-wrap justify-between items-center mx-auto">
                     <a ref={logoAnim} href="#" className="flex items-center">
                         <img src={logo} className='h-14' alt="" />

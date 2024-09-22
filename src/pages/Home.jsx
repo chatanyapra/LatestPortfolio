@@ -22,7 +22,7 @@ const Home = () => {
         onComplete: () => {
           gsap.to(homeimage.current, {
             x: "-20px",
-            duration: 0.3,
+            duration: 0.,
             ease: "power2.out",
             yoyo: true,
           });
@@ -36,7 +36,7 @@ const Home = () => {
     );
   }, []);
   return (
-    <div className='w-full h-full relative mt-24'>
+    <div className='w-full h-full relative mt-10 md:mt-24'>
       <BouncingBall />
       <div className="flex max-md:flex-col justify-evenly w-full min-h-96 p-4 md:mt-14 absolute top-0 z-10">
         <div className="w-2/4 max-md:w-full h-full text-gray-50 md:ml-16">
