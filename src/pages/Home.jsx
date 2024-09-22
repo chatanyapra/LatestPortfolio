@@ -9,8 +9,6 @@ import { FaLinkedinIn, FaGithub, FaInstagram  } from "react-icons/fa6";
 import { gsap } from "gsap";
 
 const Home = () => {
-  // const words = [" Developer", " Full-Stack Coder", " Problem Solver", " Creative Thinker"];
-  // const userimage = useRef(null);
   const homeimage = useRef(null);
   useEffect(() => {
     gsap.fromTo(
@@ -18,8 +16,8 @@ const Home = () => {
       { x: "-100vw" },
       { 
         x: "0vw",
-        delay: 1,
-        duration: 1.5, 
+        delay: 0.5,
+        duration: 1, 
         ease: "power3.out",
         onComplete: () => {
           gsap.to(homeimage.current, {
@@ -34,7 +32,7 @@ const Home = () => {
     gsap.fromTo(
       ".imageUser", 
       { scale: 0 },
-      { scale: 1, duration: 1.5, delay: 0.5, ease: 'power3.out' }
+      { scale: 1, duration: 1, delay: 0.5, ease: 'power3.out' }
     );
   }, []);
   return (
@@ -46,15 +44,15 @@ const Home = () => {
             <h5 className='text-xl py-2'>Welcome to my world</h5>
             <div className='text-6xl max-md:text-5xl font-bold py-4'>Hi,</div>
             <div className='text-6xl max-md:text-5xl font-bold py-4'> I'm <span className='text-gradient'>Chatanya</span></div>
-            <span className='text-3xl font-bold py-4 max-md:text-4xl flex'>
+            <span className='text-3xl font-bold py-4 max-md:text-4xl flex max-sm:flex-col'>
               a
-              <span className='pl-3'>
+              <span className='sm:pl-3'>
                 <TypewriterEffect/>
               </span>
             </span>
             <p>I create seamless, high-performance websites where every line of code serves a purpose—combining functionality with user-friendly experiences.</p>
           </div>
-          <div ref={homeimage} className='my-14 text-3xl flex'>
+          <div ref={homeimage} className='my-14 text-3xl flex max-sm:justify-center'>
             <FaLinkedinIn className='text-white m-1.5'/>
             <span className='btn-gradient w-14 mt-5 mx-2'></span>
             <FaGithub className='text-white m-1.5'/>
