@@ -5,18 +5,17 @@ import "./Footer.css"
 const Footer = () => {
     return (
         <div className='w-full min-h-80 relative flex max-md:flex-col justify-around items-center px-10 max-sm:px-5'>
-            {/* <img src={footerImage} alt="" className='absolute top-0 -right-6 h-full w-full' /> */}
             <img src={footerImage2} alt="" className='absolute top-0 -left-10 -right-6 h-5/6 w-screen -z-20 brightness-50' />
             <img src={footerImage3} alt="" className='absolute top-0 right-0 w-36 -z-10' />
-            <div className='w-11/12 max-sm:w-full  text-white'>
+            <div className='w-11/12 max-sm:w-full  text-white dark:text-black'>
                 <div className='text-3xl max-sm:text-2xl'>
                     Thanks for visiting!
                 </div>
                 <div className='text-base font-extralight max-sm:text-sm'>
-                ©2023 Designs by Chatanya Pratap. All right reserved.
+                ©2024 Designs by Chatanya Pratap. All right reserved.
                 </div>
             </div>
-            <div className='flex max-sm:flex-col text-white text-4xl max-sm:mb-10'>
+            <div className='flex max-sm:flex-col text-white dark:text-black text-4xl max-sm:mb-10'>
                 <ul className="example-2">
                     <li className="icon-content">
                         <a

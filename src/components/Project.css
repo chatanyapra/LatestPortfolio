@@ -5,7 +5,9 @@
     border-radius: 40px;
     background: hsla(0, 0%, 100%, 0.1);
   }
-  
+.dark .card-container {
+  background: hsla(0, 0%, 0%, 0.1);
+}
   .card-container::before {
     content: "";
     z-index: -1;

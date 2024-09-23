@@ -9,7 +9,6 @@
     backdrop-filter: saturate(200%) blur(30.5px);
 }
 .icon-shadow {
-    color: white;
     filter: drop-shadow(0 0 0.75rem #070a29);
     cursor: pointer;
 }

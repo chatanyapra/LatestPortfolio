@@ -26,6 +26,12 @@
   background: hsla(0, 0%, 100%, 0.1);
   border-radius: 100px;
 }
+.dark .home-image::before {
+  background: hsla(0, 0%, 100%, 0.1);
+}
+.dark .home-image {
+  background: hsla(0, 0%, 0%, 0.1);
+}
 .moving-img {
   position: absolute;
   left: 0%;

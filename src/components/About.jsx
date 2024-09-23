@@ -42,7 +42,7 @@ const About = () => {
         <div ref={aboutRef} className='md:w-2/4 min-h-96 about2-img float-start'>
           <div className="w-96 m-auto about-image" style={{ borderRadius: "100px" }}></div>
         </div>
-        <div className='md:w-2/4 min-h-96 mt-14 pr-10 max-md:px-4 text-white'>
+        <div className='md:w-2/4 min-h-96 mt-14 pr-10 max-md:px-4 text-white dark:text-black'>
           <h1 className='transparent-color px-4 py-1 text-4xl rounded-2xl w-fit mb-4 text-gradient flex'>
             <div className="rounded-full w-7 h-7 flex justify-center items-center mr-2 mt-1">
               <div className="bg-gradient-radial w-5 h-5 m-auto rounded-full transition-transform transform hover:scale-125 duration-300 ease-in-out"></div>

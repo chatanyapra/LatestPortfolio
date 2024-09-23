@@ -22,7 +22,7 @@ const Home = () => {
         onComplete: () => {
           gsap.to(homeimage.current, {
             x: "-20px",
-            duration: 0.,
+            duration: 0.2,
             ease: "power2.out",
             yoyo: true,
           });
@@ -39,12 +39,12 @@ const Home = () => {
     <div className='w-full h-full relative mt-10 md:mt-24'>
       <BouncingBall />
       <div className="flex max-md:flex-col justify-evenly w-full min-h-96 p-4 md:mt-14 absolute top-0 z-10">
-        <div className="w-2/4 max-md:w-full h-full text-gray-50 md:ml-16">
+        <div className="w-2/4 max-md:w-full h-full text-gray-50 dark:text-black md:ml-16">
           <div className='m-auto text-left'>
             <h5 className='text-xl py-2'>Welcome to my world</h5>
             <div className='text-6xl max-md:text-5xl font-bold py-4'>Hi,</div>
             <div className='text-6xl max-md:text-5xl font-bold py-4'> I'm <span className='text-gradient'>Chatanya</span></div>
-            <span className='text-3xl font-bold py-4 max-md:text-4xl flex max-sm:flex-col'>
+            <span className='text-3xl font-bold py-4 max-md:text-4xl flex'>
               a
               <span className='sm:pl-3'>
                 <TypewriterEffect/>
@@ -52,12 +52,12 @@ const Home = () => {
             </span>
             <p>I create seamless, high-performance websites where every line of code serves a purpose—combining functionality with user-friendly experiences.</p>
           </div>
-          <div ref={homeimage} className='my-14 text-3xl flex max-sm:justify-center'>
-            <FaLinkedinIn className='text-white m-1.5'/>
+          <div ref={homeimage} className='my-14 text-3xl flex max-sm:justify-center text-white dark:text-black'>
+            <FaLinkedinIn className='m-1.5'/>
             <span className='btn-gradient w-14 mt-5 mx-2'></span>
-            <FaGithub className='text-white m-1.5'/>
+            <FaGithub className='m-1.5'/>
             <span className='btn-gradient w-14 mt-5 mx-2'></span>
-            <FaInstagram className='text-white m-1.5'/>
+            <FaInstagram className='m-1.5'/>
           </div>
         </div>
         <div className="w-2/4 max-md:w-full h-full relative">
