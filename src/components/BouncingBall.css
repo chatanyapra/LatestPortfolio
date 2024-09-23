@@ -39,7 +39,7 @@
   z-index: -1;
 }
 .ball-1 {
-  background: radial-gradient(circle at 30% 30%, rgba(161, 34, 181, 0.5), rgba(161, 34, 181, 0));
+  background: radial-gradient(circle at 30% 30%, rgb(4, 247, 255), rgba(14, 255, 235, 0.452));
 }
 
 .ball-2 {
@@ -51,7 +51,7 @@
 }
 
 .ball-4 {
-  background: radial-gradient(circle at 30% 30%, rgba(140, 17, 113, 0.6), rgba(140, 17, 113, 0.3));
+  background: radial-gradient(circle at 30% 30%, rgba(255, 5, 217, 0.909), rgba(226, 26, 183, 0.3));
 }
 
 .ball-5 {

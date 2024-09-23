@@ -1,9 +1,9 @@
 import './App.css'
 import About from './components/About'
+import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import Project from './components/Project'
 import Home from './pages/Home'
-
 function App() {
 
   return (
@@ -16,6 +16,7 @@ function App() {
           <div className='z-10'>
             <About/>
             <Project/>
+            <Footer/>
           </div>
         </div>
       </div>

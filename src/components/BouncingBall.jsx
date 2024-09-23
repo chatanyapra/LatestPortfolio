@@ -9,7 +9,7 @@ const BouncingBall = () => {
     const ballProperties = [];
     function initializeBalls() {
       ballsRef.current.forEach((ball, index) => {
-        const size = 100; // Ball size
+        const size = 120; // Ball size
         const x = Math.random() * (window.innerWidth - (size));
         const y = Math.random() * (window.innerHeight - (size));
         const vx = (Math.random() - 0.5) * 1; // Random initial velocity on X axis
@@ -43,7 +43,7 @@ const BouncingBall = () => {
   }, []);
 
   return (
-    <div className='w-full -z-10 max-md:mt-24'>
+    <div className='w-full -z-10 max-md:mt-24 h-full'>
         <div className="bouncing-balls-container">
             <div className="ball-moving ball-1" ref={(el) => ballsRef.current[0] = el}></div>
             <div className="ball-moving ball-2" ref={(el) => ballsRef.current[1] = el}></div>

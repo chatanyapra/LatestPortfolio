@@ -2,6 +2,9 @@
     background: hsla(0, 0%, 100%, 0.1);
     border: 1px solid hsla(0, 0%, 100%, .1);
 }
+.bg-gradient-radial {
+    background: radial-gradient(circle, #a34bae 20%, #3db7dc 100%);
+}
 .about-image {
     top: 0;
     left: -70px;
