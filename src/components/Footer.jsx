@@ -1,11 +1,10 @@
-import React from 'react'
 import footerImage2 from "../assets/images/mark-header.png"
 import footerImage3 from "../assets/images/violet-ball-blur.png"
 import "./Footer.css"
 const Footer = () => {
     return (
         <div className='w-full min-h-80 relative flex max-md:flex-col justify-around items-center px-10 max-sm:px-5'>
-            <img src={footerImage2} alt="" className='absolute top-0 -left-10 -right-6 h-5/6 w-screen -z-20 brightness-50' />
+            <img src={footerImage2} alt="" className='absolute top-0 -left-20 -right-6 h-5/6 w-full -z-20 brightness-50' />
             <img src={footerImage3} alt="" className='absolute top-0 right-0 w-36 -z-10' />
             <div className='w-11/12 max-sm:w-full  text-white dark:text-black'>
                 <div className='text-3xl max-sm:text-2xl'>

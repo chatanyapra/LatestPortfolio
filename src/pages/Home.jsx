@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import BouncingBall from '../components/BouncingBall'
 import "./Home.css"
 import HomeImage from "../assets/images/frontlook boy.png";
@@ -36,14 +36,14 @@ const Home = () => {
     );
   }, []);
   return (
-    <div className='w-full h-full relative mt-10 md:mt-24'>
+    <div className='w-full h-full relative mt-10 md:mt-24 pt-10'>
       <BouncingBall />
       <div className="flex max-md:flex-col justify-evenly w-full min-h-96 p-4 md:mt-14 absolute top-0 z-10">
         <div className="w-2/4 max-md:w-full h-full text-gray-50 dark:text-black md:ml-16">
           <div className='m-auto text-left'>
             <h5 className='text-xl py-2'>Welcome to my world</h5>
             <div className='text-6xl max-md:text-5xl font-bold py-4'>Hi,</div>
-            <div className='text-6xl max-md:text-5xl font-bold py-4'> I'm <span className='text-gradient'>Chatanya</span></div>
+            <div className='text-6xl max-md:text-5xl font-bold py-4'> I&apos;m <span className='text-gradient'>Chatanya</span></div>
             <span className='text-3xl font-bold py-4 max-md:text-4xl flex'>
               a
               <span className='sm:pl-3'>
@@ -71,7 +71,7 @@ const Home = () => {
               <div className="block">
                 <div className="pl-3 pt-2 flex flex-col">
                   <span className="font-bold">Chatanya Pratap</span>
-                  <small className="-mt-1 font-extralight text-gray-500">chatanya@</small>
+                  <small className="-mt-1 font-extralight text-gray-500">@chatanya</small>
                 </div>
               </div>
              </div>
