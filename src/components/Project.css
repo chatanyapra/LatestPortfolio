@@ -83,3 +83,13 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+.project-card-bglighter::after{
+  content: "";
+  position: absolute;
+  top: 50px;
+  right: calc(50% - 450px);
+  width: 900px;
+  height: 1000px;
+  z-index: -10;
+  background: radial-gradient(34.98% 34.98% at 50% 50%, #725bda 0, rgba(6, 19, 45, 0) 100%);
+}

@@ -3,8 +3,9 @@ import ProjectCard from './ProjectCard';
 import backgroundLine from "../assets/images/background-line.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import BlogCard from './BlogCard';
 gsap.registerPlugin(ScrollTrigger);
+
 const Project = () => {
   useEffect(() => {
     const cards = gsap.utils.toArray(".projectCard");
@@ -38,8 +39,8 @@ const Project = () => {
   }, []);
 
   return (
-    <div className='w-full my-16 mx-auto flex flex-col relative'>
-      <img src={backgroundLine} className='w-full h-full absolute -left-2 -right-14' alt="" />
+    <div className='w-full my-16 mx-auto flex flex-col relative project-card-bglighter'>
+      <img src={backgroundLine} className='w-full h-full absolute -left-2 -right-14' alt=""/>
       <h1 className='transparent-color px-4 py-1 text-4xl rounded-2xl w-fit mb-4 text-gradient h-fit flex ml-6'>
         <div className="rounded-full w-7 h-7 flex justify-center items-center mr-2 mt-1">
           <div className="bg-gradient-radial w-5 h-5 m-auto rounded-full transition-transform transform hover:scale-125 duration-300 ease-in-out"></div>
@@ -62,6 +63,10 @@ const Project = () => {
       </div>
       <div className='text-2xl text-white text-right mr-20 cursor-pointer hover:text-blue-700'>
         See More...
+      </div>
+      <div className='flex m-auto justify-between'>
+        <BlogCard/>
+        <BlogCard/>
       </div>
     </div>
   );
