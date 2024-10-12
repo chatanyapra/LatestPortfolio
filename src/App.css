@@ -41,3 +41,27 @@ body{
   height: 1000px;
   background: var(--shape-circle)
 }
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  animation: marquee 10s linear infinite;
+}
+@keyframes marquee2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee2 {
+  animation: marquee2 10s linear infinite;
+}
