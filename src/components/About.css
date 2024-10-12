@@ -1,8 +1,15 @@
 .transparent-color {
-    background: hsla(0, 0%, 100%, 0.1);
+    background: hsla(0, 0%, 100%, 0.222);
     border: 1px solid hsla(0, 0%, 100%, .1);
 }
-
+.transparent-colorwhite {
+    background: hsla(0, 0%, 50%, 0.335);
+    border: 1px solid hsla(0, 0%, 47%, 0.195);
+}
+.transparent-colorblack {
+    background: hsla(0, 0%, 0%, 0.887);
+    border: 1px solid hsla(0, 0%, 0%, 0.958);
+}
 .bg-gradient-radial {
     background: radial-gradient(circle, #a34bae 20%, #3db7dc 100%);
 }

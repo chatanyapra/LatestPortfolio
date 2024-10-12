@@ -11,6 +11,8 @@ import Footer from '../components/Footer'
 import Project from '../components/Project'
 import { FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa6";
 import { gsap } from "gsap";
+import Skills from "../components/Skills";
+import Working from "../components/Working";
 
 const Home = () => {
   const homeimage = useRef(null);
@@ -96,6 +98,8 @@ const Home = () => {
       <div className='z-10'>
         <About />
         <Project />
+        <Skills />
+        <Working />
         <BlogSection />
         <Footer />
       </div>

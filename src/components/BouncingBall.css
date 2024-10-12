@@ -47,7 +47,7 @@
 }
 
 .ball-3 {
-  background: radial-gradient(circle at 30% 30%, rgba(41, 110, 41, 0.5), rgba(41, 110, 41, 0.3));
+  background: radial-gradient(circle at 30% 30%, rgb(0, 255, 0), rgba(10, 207, 10, 0.532));
 }
 
 .ball-4 {

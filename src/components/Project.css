@@ -96,8 +96,8 @@
 .blogsection-bg-design::after{
   content: "";
   position: absolute;
-  top: 50px;
-  right: -480px;
+  top: -1000px;
+  left: -480px;
   width: 900px;
   height: 1000px;
   z-index: -10;

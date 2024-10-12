@@ -77,7 +77,7 @@ const Project = () => {
           <ProjectCard />
         </div>
       </div>
-      <div className="text-2xl text-white text-right mr-20 cursor-pointer hover:text-blue-700">
+      <div className="text-2xl text-white text-right mr-20 cursor-pointer hover:text-blue-700 z-10">
         See More...
       </div>
     </div>
