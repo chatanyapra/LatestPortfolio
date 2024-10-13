@@ -43,25 +43,25 @@ body{
 }
 @keyframes marquee {
   0% {
-    transform: translateX(0);
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-400%);
   }
 }
 
 .marquee {
-  animation: marquee 10s linear infinite;
+  animation: marquee 25s linear infinite;
 }
 @keyframes marquee2 {
   0% {
-    transform: translateX(0);
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-400%);
   }
 }
 
 .marquee2 {
-  animation: marquee2 10s linear infinite;
+  animation: marquee2 25s linear infinite;
 }

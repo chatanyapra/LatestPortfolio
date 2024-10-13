@@ -65,10 +65,10 @@ const AboutPage = () => {
     { title: 'Desire to Work Hard', content: 'Detailed content about the desire to work hard...' },
   ];
   return (
-    <div className='z-10 h-auto w-full relative app-main dark:bg-white dark:text-black text-white overflow-hidden flex flex-col items-center m-auto pt-32' style={{ maxWidth: "1600px" }}>
+    <div className='z-10 h-auto w-full relative app-main dark:bg-white dark:text-black text-white overflow-hidden flex flex-col items-center m-auto pt-32 max-md:pt-12' style={{ maxWidth: "1600px" }}>
       {/* ---------content------------ */}
       <div className="w-full flex justify-evenly z-10 max-md:flex-col">
-        <div className="w-[52%] max-md:w-[98%] h-[450px] overflow-hidden max-md:h-auto transparent-color md:rounded-[50px] rounded-t-[50px] p-6 border-b-0 relative corner-circle">
+        <div className="w-[52%] max-md:w-[98%] h-[450px] overflow-hidden max-md:h-auto transparent-color md:rounded-[50px] rounded-t-[50px] p-6 border-b-0 relative">
           <h1 className="text-5xl mt-4">Hello,</h1>
           <h1 className="text-5xl pt-4">I&apos;m Chatanya</h1>
           <p className="pt-4 text-gray-400">
@@ -127,10 +127,6 @@ const AboutPage = () => {
             <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
             <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Tailwind</span>
             <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
-          </div>
-        </div>
-        <div className="w-full overflow-hidden whitespace-nowrap bg-black/30 backdrop-blur-xl py-4 rotate-3 mt-5 -ml-1">
-          <div className="marquee flex">
             <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Bootstrap</span>
             <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
             <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">AJAX</span>
@@ -139,6 +135,60 @@ const AboutPage = () => {
             <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
             <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">FastApi</span>
             <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Laravel</span>
+            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">React JS</span>
+            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Express JS</span>
+            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Tailwind</span>
+            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Bootstrap</span>
+            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">AJAX</span>
+            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">TypeScript</span>
+            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">FastApi</span>
+            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Laravel</span>
+          </div>
+        </div>
+        <div className="w-full overflow-hidden whitespace-nowrap bg-black/30 backdrop-blur-xl py-4 rotate-3 mt-5 -ml-1">
+        <div className="marquee flex">
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">TypeScript</span>
+            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Bootstrap</span>
+            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">FastApi</span>
+            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Laravel</span>
+            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">React JS</span>
+            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Express JS</span>
+            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Tailwind</span>
+            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">AJAX</span>
+            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">React JS</span>
+            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Express JS</span>
+            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Tailwind</span>
+            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">TypeScript</span>
+            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Bootstrap</span>
+            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">AJAX</span>
+            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Laravel</span>
+            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">FastApi</span>
+            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">TypeScript</span>
           </div>
         </div>
         {/* ------------working-------------- */}
