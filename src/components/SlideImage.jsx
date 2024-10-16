@@ -21,13 +21,13 @@ const Slideshow = () => {
   return (
     <div className="z-10 text-center block">
       <h2 className="text-2xl font-bold mb-4"></h2>
-      <div className="relative w-full max-w-md mx-auto h-64 rounded-3xl overflow-hidden">
+      <div className="relative w-[300px] max-w-md mx-auto h-[350px] rounded-3xl overflow-hidden">
         {images.map((src, index) => (
           <img
             key={index}
             src={src}
             alt={`Slide ${index}`}
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-2000 ease-in-out ${
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-[1500ms] ease-out ${
               index === currentIndex ? 'opacity-100' : 'opacity-0'
             }`}
           />
