@@ -2,7 +2,7 @@ import SlideImage from "../components/SlideImage"
 import "./WorkPage.css"
 const WorkPage = () => {
   return (
-    <div className='z-10 h-auto w-full relative app-main dark:bg-white dark:text-black text-white overflow-hidden flex flex-col md:px-12 m-auto pt-32 max-md:pt-12 pb-12'>
+    <div className='z-10 h-auto w-full relative dark:text-black text-white overflow-hidden flex flex-col md:px-12 m-auto pt-32 max-md:pt-12 pb-12'>
       <div className="w-[100%] min-h-96 transparent-color rounded-[50px] flex max-md:flex-col justify-between p-10 ">
         <div>
           <h1 className="text-4xl pb-10">Project Name 1</h1>
