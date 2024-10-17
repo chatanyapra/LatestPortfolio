@@ -3,8 +3,8 @@ import "./Project.css"
 
 const ProjectCard = () => {
     return (
-        <div className="transparent-color card-container my-5 flex max-md:w-[95%] max-md:h-[300px] md:w-[600px] overflow-hidden relative group">
-            <div className="card-project md:w-[500px] max-md:w-[85%] max-md:h-[300px] ">
+        <div className="transparent-color card-container my-5 flex max-md:w-[95%] max-md:h-[300px] md:w-[550px] overflow-hidden relative group">
+            <div className="card-project md:w-[450px] max-md:w-[85%] max-md:h-[300px] ">
                 <div className="img-content ">
                     <img className='w-full h-full rounded-xl' src="//picsum.photos/1920/900" alt='...' />
                 </div>
