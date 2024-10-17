@@ -1,22 +1,23 @@
 import image2 from "../assets/images/imageface2.png";
-import starpng from "../assets/images/starpng.png";
+// import starpng from "../assets/images/starpng.png";
 import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Footer from "../components/Footer";
-import { BootstrapIcon } from "../assets/IconsImage/bootstrap.png";
-import { AjaxIcon } from "../assets/IconsImage/ajax.png";
-import { ApiIcon } from "../assets/IconsImage/api.png";
-import { CssIcon } from "../assets/IconsImage/css-3.png";
-import { ExpressIcon } from "../assets/IconsImage/express-original.256x149.png";
-import { HtmlIcon } from "../assets/IconsImage/html-5.png";
-import { JavaIcon } from "../assets/IconsImage/java.png";
-import { JsIcon } from "../assets/IconsImage/js.png";
-import { ReactIcon } from "../assets/IconsImage/tailwind-css.256x154.png";
-import { TailwindIcon } from "../assets/IconsImage/react.png";
-import { TypescriptIcon } from "../assets/IconsImage/typescript.png";
-import { PhpIcon } from "../assets/IconsImage/php.png";
-import { laravelIcon } from "../assets/IconsImage/laravel.248x256.png";
+import BootstrapIcon from "../assets/IconsImage/bootstrap.png";
+import AjaxIcon from "../assets/IconsImage/ajax.png";
+import ApiIcon from "../assets/IconsImage/api.png";
+// import CssIcon from "../assets/IconsImage/css3.png";
+// import WordpressIcon from "../assets/IconsImage/wordpress.png";
+import ExpressIcon from "../assets/IconsImage/expressjs.png";
+// import HtmlIcon from "../assets/IconsImage/html5.png";
+// import JavaIcon from "../assets/IconsImage/java.png";
+// import JsIcon from "../assets/IconsImage/js.png";
+import ReactIcon from "../assets/IconsImage/react.png";
+import TailwindIcon from "../assets/IconsImage/tailwindcss.png";
+import TypescriptIcon from "../assets/IconsImage/typescript.png";
+// import PhpIcon from "../assets/IconsImage/php.png";
+import laravelIcon from "../assets/IconsImage/laravel.png";
 // import Working from "../components/Working";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -42,12 +43,12 @@ const AboutPage = () => {
   }, []);
 
   const skills = [
-    { name: 'WordPress', percentage: '75%', icons: {CssIcon}},
-    { name: 'CSS', percentage: '85%', icons: {BootstrapIcon}},
-    { name: 'HTML', percentage: '90%', icons: {HtmlIcon}},
-    { name: 'Java', percentage: '60%', icons: {JavaIcon}},
-    { name: 'PHP', percentage: '80%', icons: {PhpIcon}},
-    { name: 'JavaScript', percentage: '60%', icons: {JsIcon}},
+    { name: 'WordPress', percentage: '75%'},
+    { name: 'CSS', percentage: '85%'},
+    { name: 'HTML', percentage: '90%'},
+    { name: 'Java', percentage: '60%'},
+    { name: 'PHP', percentage: '80%'},
+    { name: 'JavaScript', percentage: '60%'},
   ];
   // ----------working---------------
   const [activeIndex, setActiveIndex] = useState(null);
@@ -132,77 +133,78 @@ const AboutPage = () => {
         </section>
         <div className="w-full overflow-hidden whitespace-nowrap bg-black/30 backdrop-blur-xl py-4 -rotate-3 -ml-1">
           <div className="marquee flex">
-            <img src={laravelIcon} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <img src={laravelIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
             <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Laravel</span>
-            <img src={ReactIcon} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <img src={ReactIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
             <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">React JS</span>
-            <img src={ExpressIcon} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <img src={ExpressIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
             <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Express JS</span>
-            <img src={TailwindIcon} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <img src={TailwindIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
             <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Tailwind</span>
-            <img src={BootstrapIcon} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <img src={BootstrapIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
             <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Bootstrap</span>
-            <img src={AjaxIcon} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
-            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">AJAX</span>
-            <img src={TypescriptIcon} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
-            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">TypeScript</span>
-            <img src={ApiIcon} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
-            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">FastApi</span>
-            <img src={laravelIcon} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <img src={laravelIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
             <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Laravel</span>
-            <img src={ReactIcon} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <img src={ReactIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
             <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">React JS</span>
-            <img src={ExpressIcon} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <img src={ExpressIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
             <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Express JS</span>
-            <img src={TailwindIcon} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <img src={TailwindIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
             <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Tailwind</span>
-            <img src={BootstrapIcon} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <img src={BootstrapIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
             <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Bootstrap</span>
-            <img src={AjaxIcon} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <img src={AjaxIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
             <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">AJAX</span>
-            <img src={TypescriptIcon} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <img src={TypescriptIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
             <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">TypeScript</span>
-            <img src={ApiIcon} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <img src={ApiIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
             <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">FastApi</span>
-            <img src={laravelIcon} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <img src={AjaxIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">AJAX</span>
+            <img src={TypescriptIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">TypeScript</span>
+            <img src={ApiIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">FastApi</span>
+            <img src={laravelIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
             <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Laravel</span>
           </div>
         </div>
         <div className="w-full overflow-hidden whitespace-nowrap bg-black/30 backdrop-blur-xl py-4 rotate-3 mt-5 -ml-1">
-        <div className="marquee flex">
+          <div className="marquee flex">
+            <img src={TypescriptIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
             <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">TypeScript</span>
-            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
-            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Bootstrap</span>
-            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <img src={ApiIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
             <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">FastApi</span>
-            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <img src={laravelIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
             <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Laravel</span>
-            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <img src={ReactIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
             <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">React JS</span>
-            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <img src={ExpressIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
             <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Express JS</span>
-            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <img src={TailwindIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
             <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Tailwind</span>
-            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
-            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">AJAX</span>
-            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
-            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">React JS</span>
-            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
-            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Express JS</span>
-            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
-            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Tailwind</span>
-            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
-            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">TypeScript</span>
-            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <img src={BootstrapIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
             <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Bootstrap</span>
-            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
-            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">AJAX</span>
-            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <img src={laravelIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
             <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Laravel</span>
-            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
-            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">FastApi</span>
-            <img src={starpng} className="w-12 mr-16  max-md:mr-10 max-md:w-8" alt="" />
+            <img src={ReactIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">React JS</span>
+            <img src={ExpressIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Express JS</span>
+            <img src={TailwindIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Tailwind</span>
+            <img src={BootstrapIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Bootstrap</span>
+            <img src={AjaxIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">AJAX</span>
+            <img src={AjaxIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">AJAX</span>
+            <img src={TypescriptIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
             <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">TypeScript</span>
+            <img src={ApiIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">FastApi</span>
+            <img src={laravelIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8" alt="" />
+            <span className="text-white text-5xl max-md:text-2xl font-bold pr-16  max-md:pr-10">Laravel</span>
           </div>
         </div>
         {/* ------------working-------------- */}

@@ -1,5 +1,20 @@
 import SlideImage from "../components/SlideImage"
 import "./WorkPage.css"
+import BootstrapIcon from "../assets/IconsImage/bootstrap.png";
+import AjaxIcon from "../assets/IconsImage/ajax.png";
+import ApiIcon from "../assets/IconsImage/api.png";
+import CssIcon from "../assets/IconsImage/css3.png";
+// import WordpressIcon from "../assets/IconsImage/wordpress.png";
+import ExpressIcon from "../assets/IconsImage/expressjs.png";
+// import HtmlIcon from "../assets/IconsImage/html5.png";
+// import JavaIcon from "../assets/IconsImage/java.png";
+import JsIcon from "../assets/IconsImage/js.png";
+import ReactIcon from "../assets/IconsImage/react.png";
+import TailwindIcon from "../assets/IconsImage/tailwindcss.png";
+import TypescriptIcon from "../assets/IconsImage/typescript.png";
+import PhpIcon from "../assets/IconsImage/php.png";
+import laravelIcon from "../assets/IconsImage/laravel.png";
+// import Working from "../components/Working";
 const WorkPage = () => {
   return (
     <div className='z-10 h-auto w-full relative dark:text-black text-white overflow-hidden flex flex-col md:px-12 m-auto pt-32 max-md:pt-12 pb-12'>
@@ -17,8 +32,40 @@ const WorkPage = () => {
         </div>
         <i> Tech Stack</i>
       </div>
-      <div className="w-[100%] transparent-color rounded-[50px] flex max-md:flex-col justify-between p-10">
-        
+      <div className="w-[100%] transparent-color rounded-[50px] flex flex-wrap items-center justify-evenly px-10 py-2">
+        <div className=" rounded-2xl w-20 h-20 max-md:block flex justify-center items-center p-2 mx-4">
+          <img src={BootstrapIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8 my-4" alt="" />
+        </div>
+        <div className=" rounded-2xl w-20 h-20 max-md:block flex justify-center items-center p-2 mx-4">
+          <img src={AjaxIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8 my-4" alt="" />
+        </div>
+        <div className=" rounded-2xl w-20 h-20 max-md:block flex justify-center items-center p-2 mx-4">
+          <img src={ApiIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8 my-4" alt="" />
+        </div>
+        <div className=" rounded-2xl w-20 h-20 max-md:block flex justify-center items-center p-2 mx-4">
+          <img src={CssIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8 my-4" alt="" />
+        </div>
+        <div className=" rounded-2xl w-20 h-20 max-md:block flex justify-center items-center p-2 mx-4">
+          <img src={ExpressIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8 my-4" alt="" />
+        </div>
+        <div className=" rounded-2xl w-20 h-20 max-md:block flex justify-center items-center p-2 mx-4">
+          <img src={JsIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8 my-4" alt="" />
+        </div>
+        <div className=" rounded-2xl w-20 h-20 max-md:block flex justify-center items-center p-2 mx-4">
+          <img src={ReactIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8 my-4" alt="" />
+        </div>
+        <div className=" rounded-2xl w-20 h-20 max-md:block flex justify-center items-center p-2 mx-4">
+          <img src={TailwindIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8 my-4" alt="" />
+        </div>
+        <div className=" rounded-2xl w-20 h-20 max-md:block flex justify-center items-center p-2 mx-4">
+          <img src={TypescriptIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8 my-4" alt="" />
+        </div>
+        <div className=" rounded-2xl w-20 h-20 max-md:block flex justify-center items-center p-2 mx-4">
+          <img src={PhpIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8 my-4" alt="" />
+        </div>
+        <div className=" rounded-2xl w-20 h-20 max-md:block flex justify-center items-center p-2 mx-4">
+          <img src={laravelIcon} className="w-12 mr-3  max-md:mr-10 max-md:w-8 my-4" alt="" />
+        </div>
       </div>
     </div>
   )

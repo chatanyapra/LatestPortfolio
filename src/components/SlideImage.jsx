@@ -19,9 +19,9 @@ const Slideshow = () => {
   }, [images.length]);
 
   return (
-    <div className="z-10 text-center block">
+    <div className="z-10 text-center block w-full">
       <h2 className="text-2xl font-bold mb-4"></h2>
-      <div className="relative w-[300px] max-w-md mx-auto h-[350px] rounded-3xl overflow-hidden">
+      <div className="relative md:w-[300px] w-full max-w-md mx-auto h-[350px] rounded-3xl overflow-hidden">
         {images.map((src, index) => (
           <img
             key={index}
