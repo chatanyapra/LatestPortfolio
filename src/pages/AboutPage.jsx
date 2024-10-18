@@ -85,10 +85,10 @@ const AboutPage = () => {
         <div className="w-[52%] max-md:w-[98%] h-[450px] overflow-hidden max-md:h-auto transparent-color md:rounded-[50px] rounded-t-[50px] p-6 border-b-0 relative">
           <h1 className="text-5xl mt-4">Hello,</h1>
           <h1 className="text-5xl pt-4">I&apos;m Chatanya</h1>
-          <p className="pt-4 text-gray-400">
+          <p className="pt-4 text-gray-400 dark:text-gray-700">
             I am a full stack developer with a passion for creating beautiful and functional web applications. I chose this as a career because I love to create nice stuff. Creativity is the key. Now I target building some awesome stuff that can help people in their daily life.
           </p>
-          <p className="pt-4 text-gray-400">
+          <p className="pt-4 text-gray-400 dark:text-gray-700">
             I am currently working as a Freelance Developer and a Full Stack Developer Intern and I am open to new opportunities. I have a healthy obsession of learning new everyday which makes a better developer and a better Athlete. I love playing Football.
           </p>
         </div>

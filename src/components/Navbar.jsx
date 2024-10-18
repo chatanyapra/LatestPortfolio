@@ -60,10 +60,10 @@ const Navbar = () => {
                             >
                                 Work
                             </Link>
-                            <Link to="/contact"
-                                className={`px-3 py-2 rounded-md text-sm font-medium drop-shadow-lg ${location.pathname === '/contact' ? 'text-blue-600' : 'text-white dark:text-black hover:text-blue-400'}`}
+                            <Link to="/blogs"
+                                className={`px-3 py-2 rounded-md text-sm font-medium drop-shadow-lg ${location.pathname === '/blogs' ? 'text-blue-600' : 'text-white dark:text-black hover:text-blue-400'}`}
                             >
-                                Contact
+                                Blogs
                             </Link>
                         </div>
                         <div className='px-3 py-2 rounded-md text-sm font-medium'>
@@ -85,8 +85,8 @@ const Navbar = () => {
                     <Link to="/work">
                         <FaBriefcase className={`icon-shadow ${location.pathname === '/work' ? 'text-blue-500' : ''}`} />
                     </Link>
-                    <Link to="/contact">
-                        <FaBookOpenReader className={`icon-shadow ${location.pathname === '/contact' ? 'text-blue-500' : ''}`} />
+                    <Link to="/blogs">
+                        <FaBookOpenReader className={`icon-shadow ${location.pathname === '/blogs' ? 'text-blue-500' : ''}`} />
                     </Link>
                 </div>
             </nav>

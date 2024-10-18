@@ -1,9 +1,10 @@
 import footerImage2 from "../assets/images/mark-header.png"
 import footerImage3 from "../assets/images/violet-ball-blur.png"
+import gmailImage from "../assets/IconsImage/gmail.png"
 import "./Footer.css"
 const Footer = () => {
     return (
-        <div className='w-full min-h-80 relative flex max-md:flex-col justify-around items-center px-10 max-sm:px-5'>
+        <div className='w-full min-h-80 relative flex max-md:flex-col justify-around items-center px-10 max-sm:px-5 max-md:pb-14 dark:text-black'>
             <img src={footerImage2} alt="" className='absolute top-0 -left-20 -right-6 h-5/6 w-full -z-20 brightness-50' />
             <img src={footerImage3} alt="" className='absolute top-0 right-0 w-36 -z-10' />
             <div className='w-11/12 max-sm:w-full  text-white dark:text-black'>
@@ -11,10 +12,19 @@ const Footer = () => {
                     Thanks for visiting!
                 </div>
                 <div className='text-base font-extralight max-sm:text-sm'>
-                ©2024 Designs by Chatanya Pratap. All right reserved.
+                ©2024 Designs by Chatanya Pratap.
                 </div>
             </div>
-            <div className='flex max-sm:flex-col text-white dark:text-black text-4xl max-sm:mb-10'>
+            <div className="text-xl flex flex-col max-md:text-sm max-sm:pb-10">
+                <span>
+                    connect with me via Mail?
+                </span>
+                <a href='https://mail.google.com/' className="text-blue-400 flex cursor-pointer animate-pulse hover:text-blue-700 transition-colors duration-500">
+                    <img src={gmailImage} className="w-8 bg-gray-300 rounded-md mr-2" alt="" />
+                    pratapchatanya@gmail.com
+                </a>
+            </div>
+            <div className='absolute bottom-4 max-sm:w-full right-4 flex max-sm:flex-col text-white dark:text-black text-4xl max-sm:mb-10'>
                 <ul className="example-2">
                     <li className="icon-content">
                         <a

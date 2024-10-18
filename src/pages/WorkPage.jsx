@@ -90,13 +90,13 @@ const WorkPage = () => {
       <div className="w-[100%] min-h-96 transparent-color rounded-[50px] flex max-md:flex-col justify-between p-10 ">
         <div>
           <h1 className="text-4xl pb-10">Project Name 1</h1>
-          <p className="text-gray-400">
+          <p className="text-gray-400 dark:text-gray-700">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam
             perferendis accusamus temporibus animi pariatur, est facere, eaque,
             molestias ad aut magni vero consequuntur repudiandae minima quaerat?
             Optio laudantium provident dolorum?
           </p>
-          <p className="text-gray-400 pt-5">
+          <p className="text-gray-400 dark:text-gray-700 pt-5">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam
             perferendis accusamus temporibus animi pariatur, est facere, eaque,
             molestias ad aut magni vero consequuntur repudiandae minima quaerat?

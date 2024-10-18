@@ -11,7 +11,7 @@ const BouncingBall = () => {
 
     function initializeBalls() {
       ballsRef.current.forEach((ball, index) => {
-        const size = 120; // Ball size
+        const size =Math.floor(Math.random() * (200 - 100 + 1)) + 80; // Ball size
         const x = Math.random() * (window.innerWidth - size);
         const y = Math.random() * (window.innerHeight - size);
         const vx = (Math.random() - 0.5) * 1; // Random initial velocity on X axis
