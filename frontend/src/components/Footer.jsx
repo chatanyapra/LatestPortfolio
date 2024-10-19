@@ -15,7 +15,7 @@ const Footer = () => {
                 ©2024 Designs by Chatanya Pratap.
                 </div>
             </div>
-            <div className="text-xl flex flex-col max-md:text-sm max-sm:pb-10">
+            <div className="text-xl flex flex-col max-md:text-sm max-sm:pb-10 text-white">
                 <span>
                     connect with me via Mail?
                 </span>
