@@ -56,9 +56,7 @@ export const loginUser = asyncHandler(async(req, res) => {
 
         res.status(200).json({
             _id: user._id,
-            fullname: user.fullname,
             username: user.username,
-            profilePic: user.profilePic
         })
 
     } catch (error) {
